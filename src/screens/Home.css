@@ -1,0 +1,65 @@
+import React, { useState } from "react";
+import MovieCard from "../component/MovieCard";
+import { useMovies } from "../hooks/useMovies";
+
+interface Props {
+  onLogout: () => void;
+  username: string;
+}
+
+export default function Home({ onLogout, username }: Props) {
+  const movies = useMovies();
+  const [query, setQuery] = useState("");
+
+  const filtered = (movies || []).filter((movie) =>
+    movie.title.toLowerCase().includes(query.toLowerCase())
+  );
+
+  return (
+    <div className="app">
+      <header className="app-header">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "0 1rem" }}>
+          <h1>🎬 Now Playing</h1>
+          <div>
+            <span style={{ color: "#fff", marginRight: "1rem" }}>Welcome, {username}!</span>
+            <button
+              onClick={onLogout}
+              style={{
+                padding: "0.4rem 1rem",
+                backgroundColor: "#ff6b6b",
+                border: "none",
+                borderRadius: "20px",
+                cursor: "pointer",
+                fontWeight: "bold",
+              }}
+            >
+              Logout
+            </button>
+          </div>
+        </div>
+        <p>Trending movies this week</p>
+        <input
+          type="text"
+          placeholder="Search movies..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          style={{
+            marginTop: "1rem",
+            padding: "0.5rem 1rem",
+            borderRadius: "8px",
+            border: "none",
+            background: "#333",
+            color: "#fff",
+            fontSize: "1rem",
+            width: "300px",
+          }}
+        />
+      </header>
+      <div className="movies-grid">
+        {filtered.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </div>
+    </div>
+  );
+}
