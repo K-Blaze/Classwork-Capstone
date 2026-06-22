@@ -59,7 +59,7 @@ export default function Home({ onNavigate }: Props) {
 
       <div style={styles.founderSection}>
         <div style={styles.founderInner}>
-          <img src={BASE + "IMG_20260622_062348(1).jpg"} alt="K-Blaze Founder and CEO" style={styles.founderImg} />
+          <img src={BASE + "IMG_20260622_062336(1).jpg"} alt="K-Blaze Founder and CEO" style={styles.founderImg} />
           <div style={styles.founderText}>
             <h2 style={styles.founderTitle}>Meet the Founder & CEO</h2>
             <p style={styles.founderBio}>I'm Kenyada Peoples — known as K-Blaze. Wife, mom, entrepreneur, and the heart behind BeautifullyHers. Our homeopathic oral sprays are made from natural, plant-based ingredients that work with your body. No harsh chemicals. No synthetic drugs. Just pure wellness, beautifully crafted for her.</p>
