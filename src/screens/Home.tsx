@@ -4,7 +4,7 @@ interface Props {
   onNavigate: (page: any) => void;
 }
 
-const BASE = "https://raw.githubusercontent.com/K-Blaze/Classwork-Capstone/main/public/";
+const BASE = "https://raw.githubusercontent.com/K-Blaze/Classwork-Capstone/main/";
 
 const products = [
   { img: "IMG_20260622_062336(1).jpg", name: "Anx — Anxiety + Tension", desc: "May relieve symptoms of anxiety and tension. Doctor formulated.", price: "$42.00" },
