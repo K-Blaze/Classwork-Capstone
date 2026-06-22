@@ -98,7 +98,7 @@ export default function Home({ onNavigate }: Props) {
               <h3 style={styles.productName}>{product.name}</h3>
               <p style={styles.productDesc}>{product.desc}</p>
               <p style={styles.productPrice}>{product.price}</p>
-              <a href="https://neighborgoods.net" target="_blank" rel="noreferrer" style={styles.shopBtn}>Shop Now</a>
+              <a href="tel:3192622393" style={styles.shopBtn}>Call to Order</a>
             </div>
           ))}
         </div>
@@ -129,7 +129,7 @@ export default function Home({ onNavigate }: Props) {
               <h3 style={styles.bundleName}>{bundle.name}</h3>
               <p style={styles.bundlePrice}>{bundle.price}</p>
               <p style={styles.bundleDesc}>{bundle.desc}</p>
-              <a href="https://neighborgoods.net" target="_blank" rel="noreferrer" style={styles.shopBtn}>Get Started</a>
+              <a href="tel:3192622393" style={styles.shopBtn}>Call to Order</a>
             </div>
           ))}
         </div>
