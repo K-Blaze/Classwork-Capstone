@@ -10,7 +10,6 @@ const products = [
   { img: "IMG_20260622_062404 (3)(1).png", name: "Anx — Anxiety + Tension", desc: "May relieve symptoms of anxiety and tension. Doctor formulated.", price: "$42.00" },
   { img: "IMG_20260622_062404 (2)(1).png", name: "Ins — Insomnia", desc: "May relieve sleeplessness caused by anxiety, restlessness, or stress.", price: "$42.00" },
   { img: "IMG_20260622_062404 (1)(1).png", name: "Mp — Menopause", desc: "May relieve hot flashes and hormonal imbalance. With Black Cohosh.", price: "$42.00" },
-  { img: "IMG_20260622_062336(1).jpg", name: "BpS — Back Pain + Sciatica", desc: "Homeopathic relief for back pain and sciatica symptoms.", price: "$42.00" },
   { img: "IMG_20260622_062404.png", name: "Pain Relief", desc: "Natural homeopathic pain relief. Doctor formulated.", price: "$42.00" },
   { img: "IMG_20260622_062352.png", name: "TH — Tension Headache", desc: "May relieve tension headache symptoms naturally.", price: "$42.00" },
 ];
